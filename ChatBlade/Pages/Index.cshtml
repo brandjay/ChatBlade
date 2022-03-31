@@ -1,0 +1,62 @@
+﻿@page
+
+<style>
+    h5{
+        color: blue;
+    }
+</style>
+<div class="card text-center">
+     <div class="card-body">
+    <h3>Social Chat: do not refresh page of current chat will be deleted for your session only</h3>
+        </div>
+</div>
+<div class="container text-center">
+    <div class="row">&nbsp;</div>
+    <div class="row">
+
+        <!--<div class="col-2">User</div> -->
+        <div class="col-4"><input type="hidden" id="userInput" /></div>
+
+    </div>
+        <div class="row text-center">
+            <div class="col-2">Message</div>
+            <div class="col-4">
+                <input type="text" id="messageInput" onfocus="this.value=''" value="" />
+                <!--Preview for message dom element-->
+                <h3 id="preview"></h3>
+                </div>
+            </div>
+        </div>
+
+    <div class="row ">&nbsp;</div>
+    <div class="row">
+        <div class="col-6 text-center">
+           <!-- <input type="button" id="sendButton" value="Send Message" /> -->
+            <button class="btn btn-outline-success" id="sendButton">Send message</button>
+        </div>
+    </div>
+
+<div class="row">
+    <div class="col-12">
+        <hr />
+    </div>
+</div>
+<div class="row text-center">
+    <div class="col-6">
+        <div class="card mx-auto">
+            <div class="card-body">
+                <h5 id="messagesList"></h5>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- generate preview of messages-->
+<script>
+    var messageInput = document.getElementById('messageInput');
+
+    messageInput.onkeyup = messageInput.onkeypress = function () {
+        document.getElementById('preview').innerHTML = this.value;
+    }
+</script>
+<script src="~/js/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/chat.js"></script>

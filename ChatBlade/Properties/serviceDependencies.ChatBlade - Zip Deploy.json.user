@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "signalr1": {
+      "restored": true,
+      "restoreTime": "2022-03-31T23:24:36.0208613Z"
+    }
+  },
+  "parameters": {
+    "signalr1.resourceGroupName": {
+      "Name": "signalr1.resourceGroupName",
+      "Type": "resourceGroup",
+      "Value": "ChatBlade20220331182046ResourceGroup"
+    },
+    "signalr1.subscriptionId": {
+      "Name": "signalr1.subscriptionId",
+      "Type": "subscription",
+      "Value": "79add5f1-3a8d-4b94-8db4-4557ac22e9b6"
+    }
+  }
+}
