@@ -37,3 +37,12 @@ C:\Users\brand\source\repos\ChatBlade\ChatBlade\obj\Debug\netcoreapp3.1\ChatBlad
 C:\Users\brand\source\repos\ChatBlade\ChatBlade\obj\Debug\netcoreapp3.1\ChatBlade.pdb
 C:\Users\brand\source\repos\ChatBlade\ChatBlade\obj\Debug\netcoreapp3.1\ChatBlade.genruntimeconfig.cache
 C:\Users\brand\source\repos\ChatBlade\ChatBlade\obj\Debug\netcoreapp3.1\ChatBlade.csproj.CopyComplete
+C:\Users\brand\source\repos\ChatBlade\ChatBlade\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Http.Connections.Client.dll
+C:\Users\brand\source\repos\ChatBlade\ChatBlade\bin\Debug\netcoreapp3.1\Microsoft.Azure.SignalR.Common.dll
+C:\Users\brand\source\repos\ChatBlade\ChatBlade\bin\Debug\netcoreapp3.1\Microsoft.Azure.SignalR.dll
+C:\Users\brand\source\repos\ChatBlade\ChatBlade\bin\Debug\netcoreapp3.1\Microsoft.Azure.SignalR.Protocols.dll
+C:\Users\brand\source\repos\ChatBlade\ChatBlade\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\brand\source\repos\ChatBlade\ChatBlade\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\brand\source\repos\ChatBlade\ChatBlade\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\brand\source\repos\ChatBlade\ChatBlade\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\brand\source\repos\ChatBlade\ChatBlade\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll

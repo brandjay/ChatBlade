@@ -1,62 +1,56 @@
 ﻿@page
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<style>
-    h5{
-        color: blue;
-    }
-</style>
-<div class="card text-center">
-     <div class="card-body">
-    <h3>Social Chat: do not refresh page of current chat will be deleted for your session only</h3>
+    <style>
+        h5 {
+            color: black;
+        }
+    </style>
+        <div class="card">
+            <div class="card-body">
+                <h2 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Social Chat: do not refresh page or current chat will be deleted for your session only
+                    </button>
+                </h2>
+            </div>
         </div>
-</div>
-<div class="container text-center">
-    <div class="row">&nbsp;</div>
-    <div class="row">
+        <hr />
 
-        <!--<div class="col-2">User</div> -->
-        <div class="col-4"><input type="hidden" id="userInput" /></div>
-
-    </div>
+        <!-- Chat box-->
         <div class="row text-center">
-            <div class="col-2">Message</div>
-            <div class="col-4">
-                <input type="text" id="messageInput" onfocus="this.value=''" value="" />
-                <!--Preview for message dom element-->
-                <h3 id="preview"></h3>
+            <div class="col-lg-12">
+                <div class="card mx-auto">
+                    <div class="card-body">
+                        <h5 id="messagesList"></h5>
+                    </div>
                 </div>
             </div>
         </div>
 
-    <div class="row ">&nbsp;</div>
-    <div class="row">
-        <div class="col-6 text-center">
-           <!-- <input type="button" id="sendButton" value="Send Message" /> -->
-            <button class="btn btn-outline-success" id="sendButton">Send message</button>
-        </div>
-    </div>
+        <!--end chat box-->
+        <div class="container text-center">
+            <div class="row">&nbsp;</div>
+            <div class="row">
 
-<div class="row">
-    <div class="col-12">
-        <hr />
-    </div>
-</div>
-<div class="row text-center">
-    <div class="col-6">
-        <div class="card mx-auto">
-            <div class="card-body">
-                <h5 id="messagesList"></h5>
+                <!--<div class="col-2">User</div> -->
+                <div class="form-group col-12">
+                    <div class="col-4"><input type="hidden" id="userInput" /></div>
+                    <h5></h5> <h3 id="preview"></h3>         <!--Preview for message dom element-->
+                    <br />
+                    <textarea class="form-control" rows="3" id="messageInput" onfocus="this.value=''" value=""></textarea>
+
+                    <button class="btn btn-outline-success" id="sendButton">Send message</button>
+                </div>
             </div>
         </div>
-    </div>
-</div>
-<!-- generate preview of messages-->
-<script>
-    var messageInput = document.getElementById('messageInput');
+        <!-- generate preview of messages-->
+        <script>
+            var messageInput = document.getElementById('messageInput');
 
-    messageInput.onkeyup = messageInput.onkeypress = function () {
-        document.getElementById('preview').innerHTML = this.value;
-    }
-</script>
-<script src="~/js/signalr/dist/browser/signalr.js"></script>
-<script src="~/js/chat.js"></script>
+            messageInput.onkeyup = messageInput.onkeypress = function () {
+                document.getElementById('preview').innerHTML = this.value;
+            }
+        </script>
+        <script src="~/js/signalr/dist/browser/signalr.js"></script>
+        <script src="~/js/chat.js"></script>
